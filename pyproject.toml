@@ -1,7 +1,7 @@
 [project]
 name = "nf-ctm-lattice-pure"
 version = "0.1.0"
-description = "Pure NF-CTM Lattice algorithms for backdoor detoxification research on object detectors."
+description = "Pure NF-CTM lattice research for object-detection backdoor detox via recurrent synchronization fields, CTM gauge fixing, basin separation, and residual-profile dynamics."
 requires-python = ">=3.10"
 dependencies = [
   "numpy",

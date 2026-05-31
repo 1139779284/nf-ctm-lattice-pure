@@ -1,10 +1,45 @@
 # NF-CTM Lattice Pure
 
-Standalone research repository for the pure NF-CTM Lattice detox algorithm.
+A pure CTM-based research line for object-detection backdoor detoxification.
+The central idea is to reinterpret a detector neck feature tensor as a
+recurrent neural-field lattice, then learn trigger-causal feature repair through
+CTM synchronization dynamics.  The algorithm is intentionally not a CNN
+purifier branch, score-calibration rule, weight-soup recipe, runtime guard,
+post-processing editor, or detector-CTM-detector sandwich.
 
 This repository is intentionally algorithm-only.  It contains CTM lattice code,
 YOLO runner scripts, tests, and audit/progress documents.  It does not include
 model weights, datasets, videos, benchmark caches, or virtual environments.
+
+## Algorithmic Contribution
+
+NF-CTM Lattice proposes an in-flow purification layer:
+
+```text
+detector neck feature F_0
+-> CTM synchronization field and recurrent thought dynamics
+-> terminal CTM state F_T
+-> frozen downstream detector head
+```
+
+Its main research claim is that backdoor detoxification can be expressed as a
+CTM synchronization-field problem rather than as a detector-specific repair
+pipeline.  The current implementation explores:
+
+```text
+channel / spatial / field-order synchronization edges
+adaptive update gates driven by CTM sync residuals
+sync-drive and total-drive DC gauge fixing against global damping collapse
+label-conditioned synchronization attractors and basin separation
+thought-energy concentration and residual-profile invariance
+valid-state fixed-point and homeostasis regularizers for clean preservation
+```
+
+The intended novelty is the CTM-native treatment of trigger evidence: triggered
+features should enter a different synchronization basin and receive structured
+thought motion, while valid clean features should stay close to stable CTM fixed
+points.  Open blockers are documented below and in `docs/`; this repository
+does not claim that every attack family or video case is already solved.
 
 ## Research Boundary
 

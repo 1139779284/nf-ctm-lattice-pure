@@ -1,0 +1,20 @@
+[project]
+name = "nf-ctm-lattice-pure"
+version = "0.1.0"
+description = "Pure NF-CTM Lattice algorithms for backdoor detoxification research on object detectors."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "opencv-python",
+  "torch",
+  "ultralytics",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

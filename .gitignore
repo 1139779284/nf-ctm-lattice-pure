@@ -1,0 +1,28 @@
+.pytest_cache/
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.pixi/
+dist/
+build/
+*.egg-info/
+
+# Keep this repository algorithm-only. Put large artifacts in the main
+# clean_yolo workspace or a release asset, not in Git.
+models/
+datasets/
+benchmark_runs/
+runs/
+*.pt
+*.pth
+*.onnx
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+*.7z
+*.rar
